@@ -4,10 +4,6 @@ import axios from 'axios';
 import Card from './Card';
 
 
-
-
-
-
 const CoronaForCountry=()=>{
     const [data,setData]=useState([]);
     const [queryText,setQueryText]=useState("");

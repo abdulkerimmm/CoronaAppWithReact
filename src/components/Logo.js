@@ -10,7 +10,6 @@ const Logo = ({ logo, title }) => {
                 {title}
             </span>
 
-         
         </div>
 
     )

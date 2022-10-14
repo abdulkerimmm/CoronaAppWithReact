@@ -13,7 +13,6 @@ const MenuItem = ({ title, active, whenClick }) => {
                 {title}
             </a>
         </li>
-
             
     )
 }

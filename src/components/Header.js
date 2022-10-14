@@ -3,12 +3,6 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import MenuItem from "./MenuItem";
 
-
-
-
-
-
-
 const Header = ({ activeTitle, onMenuChange }) => {
     const [_activeTitle, setActiveTitle] = useState(activeTitle)
    
@@ -31,12 +25,12 @@ const Header = ({ activeTitle, onMenuChange }) => {
     return (
         <nav className="bg-gray-800 border-gray-200 px-2 py-2.5 ">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <Logo />
+                <Logo />    
                 
                 <div className="w-auto block">
                     <ul className="flex flex-row  mt-4 font-semibold text-xs space-x-8 mt-0 ">
+                        
                         {menuItems.map((item) => { 
-
                             return (
                                 <MenuItem
                                     key={item.title} //not important    
