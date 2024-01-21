@@ -30,8 +30,11 @@ const Header = ({ activeTitle, onMenuChange }) => {
                 <div className="w-auto block">
                     <ul className="flex flex-row  mt-4 font-semibold text-xs space-x-8 mt-0 ">
                         
+                        
+
                         {menuItems.map((item) => { 
                             return (
+            
                                 <MenuItem
                                     key={item.title} //not important    
                                     active={item.title === _activeTitle} 
@@ -39,10 +42,10 @@ const Header = ({ activeTitle, onMenuChange }) => {
                                     whenClick={(title1) => { // sendTitletoHeader belongs to MenuItem it will take own value in MenuItem      // burada B ne analama geliyor                                 
                                         setActiveTitle(title1)       // then it will assingn to _activeTitle
                                         onMenuChange(item.value)
-
+                                        
                                     }}
                                     
-                                    
+                              
                                      />
                                  
                             )

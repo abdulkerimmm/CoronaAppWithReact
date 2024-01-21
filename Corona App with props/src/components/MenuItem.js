@@ -23,7 +23,7 @@ MenuItem.propTypes = {
     whenClick: PropTypes.func,
 }
 
-MenuItem.defaultProps = {
+MenuItem.defaultProps = { 
     title: "",
     active: false,
     whenClick: () => null,
